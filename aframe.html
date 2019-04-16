@@ -1,0 +1,24 @@
+<!doctype HTML>
+<html>
+  <head>
+    <script src="./aframe.min.js"></script>
+    <script src="./aframe-ar.js"></script>
+  </head>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+      <a-assets>
+        <a-asset-item id="rose-obj" src="./rose/rose.obj"></a-asset-item>
+        <a-asset-item id="rose-mtl" src="./rose/rose.mtl"></a-asset-item>
+      </a-assets>
+      <a-marker preset="pattern" type="pattern"
+        url='./pattern-marker.patt'>
+        <a-entity
+          scale="0.005 0.005 0.005"
+          rotation="300 30 0"
+          obj-model="obj: #rose-obj; mtl: #rose-mtl">
+        </a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
