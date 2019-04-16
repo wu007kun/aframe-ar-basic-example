@@ -1,7 +1,7 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 30.03.2018 09:54:20
+# File Created: 30.03.2018 09:59:19
 
-mtllib google poly green 1.mtl
+mtllib google poly blue.mtl
 
 #
 # object default
